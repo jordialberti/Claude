@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: [claude/claude-md-mllxfeem8qzvv0zc-yedm2]
 
 permissions:
   contents: read
