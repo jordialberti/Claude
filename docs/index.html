@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude — Projectes</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "Segoe UI", Roboto, Arial, sans-serif; background: #f5f6fa; color: #32363a; min-height: 100vh; display: flex; flex-direction: column; align-items: center; padding: 60px 20px; }
+        h1 { font-size: 28px; margin-bottom: 8px; }
+        p.sub { color: #6a6d70; margin-bottom: 40px; }
+        .projects { display: grid; gap: 16px; width: 100%; max-width: 520px; }
+        a.card { display: block; background: #fff; border: 1px solid #d9d9d9; border-radius: 8px; padding: 20px 24px; text-decoration: none; color: inherit; transition: box-shadow 0.15s, border-color 0.15s; }
+        a.card:hover { border-color: #0a6ed1; box-shadow: 0 2px 12px rgba(10,110,209,0.12); }
+        .card h2 { font-size: 18px; color: #0a6ed1; margin-bottom: 4px; }
+        .card .desc { font-size: 14px; color: #6a6d70; }
+        .card .lang { font-size: 11px; font-weight: 600; text-transform: uppercase; background: #e8f4fd; color: #0a6ed1; padding: 2px 8px; border-radius: 10px; margin-left: 8px; vertical-align: middle; }
+    </style>
+</head>
+<body>
+    <h1>Claude — Projectes</h1>
+    <p class="sub">Repositori de projectes creats amb Claude</p>
+    <div class="projects">
+        <a class="card" href="WD1/index.html">
+            <h2>WD1 <span class="lang">JavaScript</span></h2>
+            <p class="desc">Sol·licituds de compra SAP B1 → Comandes de compra</p>
+        </a>
+        <a class="card" href="Frame/index.html">
+            <h2>Frame <span class="lang">React</span></h2>
+            <p class="desc">Editor de bases de coneixement amb frames (UI retro)</p>
+        </a>
+        <a class="card" href="helloworld/main.py">
+            <h2>helloworld <span class="lang">Python</span></h2>
+            <p class="desc">Minimal hello world</p>
+        </a>
+    </div>
+</body>
+</html>
