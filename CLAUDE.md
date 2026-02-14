@@ -15,15 +15,23 @@ This repository is organized as a monorepo. Each subdirectory is an independent 
 ```
 /
 ├── CLAUDE.md          # AI assistant guidance (this file)
-└── helloworld/        # Minimal Python subproject
-    └── main.py
+├── helloworld/        # Minimal Python subproject
+│   └── main.py
+└── WD1/               # SAP B1 Purchase Request → Purchase Order converter
+    ├── index.html
+    ├── css/
+    │   └── styles.css
+    └── js/
+        ├── mock-data.js
+        └── app.js
 ```
 
 ### Subprojects
 
-| Subproject   | Language | Description          | Run command                        |
-|--------------|----------|----------------------|------------------------------------|
-| `helloworld` | Python   | Minimal hello world  | `python3 helloworld/main.py`       |
+| Subproject   | Language   | Description                                          | Run command                        |
+|--------------|------------|------------------------------------------------------|------------------------------------|
+| `helloworld` | Python     | Minimal hello world                                  | `python3 helloworld/main.py`       |
+| `WD1`        | JavaScript | Sol·licituds de compra SAP B1 → Comandes de compra   | Obrir `WD1/index.html` al navegador|
 
 ## Development Workflow
 
@@ -49,6 +57,21 @@ When code is added to this repository, follow these conventions:
 ```bash
 python3 helloworld/main.py
 ```
+
+### WD1
+
+Obrir `WD1/index.html` directament al navegador. No requereix servidor ni dependències.
+
+**Arquitectura WD1:**
+- `index.html` — Estructura de la pàgina (taula, filtres, modal)
+- `css/styles.css` — Estils amb variables CSS (paleta SAP Fiori-like)
+- `js/mock-data.js` — Dades simulades (proveïdors, articles, sol·licituds)
+- `js/app.js` — Lògica: filtrat, selecció múltiple, conversió simulada
+
+**Pròxims passos WD1:**
+- Connectar amb SAP Service Layer API (substituir mock-data.js)
+- Autenticació SAP B1
+- Creació real de comandes de compra via API
 
 ## Guidelines for AI Assistants
 
