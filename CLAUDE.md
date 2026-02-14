@@ -6,17 +6,24 @@ This file provides guidance for AI assistants working with this repository.
 
 - **Name**: Claude
 - **Owner**: jordialberti
-- **Status**: New repository — initial setup phase
+- **Status**: Monorepo with independent subprojects
 
 ## Project Structure
 
-This repository is in its initial state. As the project grows, this section should be updated to reflect the directory layout and architecture.
+This repository is organized as a monorepo. Each subdirectory is an independent subproject.
 
 ```
 /
 ├── CLAUDE.md          # AI assistant guidance (this file)
-└── (project files)    # To be added
+└── helloworld/        # Minimal Python subproject
+    └── main.py
 ```
+
+### Subprojects
+
+| Subproject   | Language | Description          | Run command                        |
+|--------------|----------|----------------------|------------------------------------|
+| `helloworld` | Python   | Minimal hello world  | `python3 helloworld/main.py`       |
 
 ## Development Workflow
 
@@ -37,17 +44,11 @@ When code is added to this repository, follow these conventions:
 
 ## Commands
 
-_No build, test, or lint commands configured yet. Update this section as tooling is added._
+### helloworld
 
-<!--
-Example format once commands are set up:
-- **Install dependencies**: `npm install` / `pip install -r requirements.txt`
-- **Run tests**: `npm test` / `pytest`
-- **Run single test**: `npm test -- path/to/test` / `pytest path/to/test.py`
-- **Lint**: `npm run lint` / `ruff check .`
-- **Build**: `npm run build` / `make build`
-- **Format**: `npm run format` / `ruff format .`
--->
+```bash
+python3 helloworld/main.py
+```
 
 ## Guidelines for AI Assistants
 
